@@ -1,0 +1,374 @@
+@charset "utl-8";
+
+
+header
+{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(255, 239, 150);
+}
+
+.container
+{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top
+{
+    padding: 180px 0 300px 0;
+    background-image: url("../images/top_cat.png");
+    background-size: cover;
+   
+}
+
+.top h1
+{
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.logo
+{
+    width: 80px;
+    padding-left: 15px;
+}
+
+header
+{
+    position: fixed;/*fixedで固定*/
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left
+{
+    position: relative;
+    float: left;
+}
+
+.header-center
+{
+    display: flex;
+    text-align: center;
+    gap: 80px;
+    flex-wrap: nowrap;
+}
+
+.header-center a
+{
+    color: rgb(126, 0, 0);
+    text-decoration: none; /*下線を非表示に*/
+    padding: 25px 0; /* 上下のパディングは残し、左右のパディングは gap で代替します */
+    white-space: nowrap; /
+}
+
+.paws
+{
+    position: absolute;
+    scale : 90%;
+    top: 95%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.explanation
+{
+    height: 1000px;
+    /* width: 1200px; */
+    background-color: rgb(255, 239, 239);
+    text-align: center;
+    border-radius: 400px 400px 0 0;
+
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.explanation-logo
+{
+    padding-top: 100px;
+    color: rgb(103, 0, 0);
+}
+
+.explanation-img
+{
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.explanation-img img
+{
+    border-radius: 50%;
+    padding: 0 25px;
+}
+
+
+.explanation-text p
+{
+   float: left;
+   clear: both;
+   line-height: 1.0;
+   margin-left: 300px; 
+   color: rgb(103, 0, 0);
+}
+
+.HowtoUse
+{
+    height: 1500px;
+    background-color: white;
+}
+
+.HowtoUse-logo
+{
+    padding-top: 100px;
+    text-align:center;
+    color: rgb(255, 177, 177);
+}
+
+.HowtoUse-list
+{
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 50px; /* Add space between list items */
+    padding-top: 50px; /* Add some space from the logo */
+}
+
+.list
+{
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically align items */
+    width: 900px; /* Set a fixed width for the list item */
+    justify-content: space-between; /* Distribute space between image and text */
+}
+
+.list.reverse-order 
+{
+    flex-direction: row-reverse; /* This puts the image on the right and text on the left */
+}
+
+
+.list img
+{
+    height: 300px;
+    margin-right: 50px; /* Space between image and text */
+}
+
+.list.reverse-order img 
+{
+    margin-right: 0;
+    margin-left: 30px; /* Space between image and text when image is on right */
+}
+
+.text
+{
+    margin: 0;
+     padding: 0;
+     flex-grow: 1; /* Allow text to take up available space */
+}
+
+.title
+{
+     margin-bottom: 10px; /* Space below the title */
+}
+
+.texts
+{
+     white-space: nowrap; /* テキストの自動改行を防止 */
+     line-height: 1.5; /* Improve readability for paragraphs */
+}
+
+
+.ShopInfo
+{
+    margin-top: 100px;
+    height: 2000px;
+    background-color: rgb(243, 243, 243);
+}
+
+
+.catsList-title
+{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.catsList-lists
+{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.catsList-list
+{
+    text-align: center;
+    width: 30%;
+    padding: 60px 0;
+}
+
+.catsList-list img
+{
+    width: 320px; /* 例：幅を固定 */
+    height: 213px; /* 例：高さを固定 */
+    object-fit: cover;
+}
+
+.name
+{
+    text-align: center;
+    /* margin-top: -70px; */
+}
+
+.prevention
+{
+    background-color: rgb(255, 229, 229);
+    width: 65%;
+    height: 800px; 
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.prevention-title
+{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(204, 49, 49);
+    position: relative;
+    top: -30px;
+}
+
+prevention h3
+{
+    text-align: center;
+}
+
+.red
+{
+    color: red;
+}
+
+.prevention-text
+{
+    padding-left: 70px;
+
+}
+
+.prevention-list
+{
+    /* text-align: center; */
+    padding-left: 50px;
+    line-height: 2.5;
+}
+
+.store
+{
+    height: 1000px;
+}
+
+.store-title
+{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.question h3
+{
+    float: left;
+    clear: both;
+    line-height: 1.0;
+    margin-left: 400px; 
+}
+
+.question p
+{
+    float: left;
+    clear: both;
+    line-height: 0.1;
+    margin-left: 400px; 
+}
+
+.inquiry
+{
+    background-color: rgb(243, 243, 243);
+    height: 1000px;
+}
+
+.inquiry-title
+{
+    text-align: center;
+    padding-top: 100px;
+}
+
+input 
+{
+    width: 500px; 
+    height: 35px;
+}
+
+textarea
+{
+    width: 500px; 
+    height: 300px;
+}
+
+.inquiry-list
+{
+    padding-left: 500px;
+}
+
+.message
+{
+    display: flex;
+    align-items: center;
+    margin: 70px 200px;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 15px 40px;
+    background-color: rgb(166, 255, 88);
+    box-shadow: 0 7px rgb(79, 121, 42);
+}
+
+.message:active
+{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+footer
+{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 239, 150);
+}
+
+.footer-center
+{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 0 0 500px;
+}
+
+.footer-center a
+{
+    color: rgb(126, 0, 0);
+    text-decoration: none; /*下線を非表示に*/
+}
+
+.flogo
+{
+    width: 100px;
+    height: 100px;
+    padding-left: 15px;
+}
